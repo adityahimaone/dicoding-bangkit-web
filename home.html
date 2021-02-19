@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bangkit.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/image/bangkit_logo.png" type="image/x-icon">
+    <title>Bangkit Academy</title>
 </head>
 
 <body>
@@ -20,9 +21,16 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#learningpath">Learning Path</a></li>
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn nav-link">Learning Path</a>
+                            <div class="dropdown-menu">
+                                <a href="#ml">Machine Learning</a>
+                                <a href="#cc">Cloud Computing</a>
+                                <a href="#ad">Android Developer</a>
+                              </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -66,7 +74,7 @@
         <section id="learningpath" class="learning-path">
             <h1>Learning Path</h1>
             <div class="content-path">
-                <div class="cards-item">
+                <div class="cards-item" id="ml">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/image/tf_logo_social.png" class="img-card">
@@ -79,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards-item">
+                <div class="cards-item" id="cc">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/image/gcp.png" class="img-card">
@@ -92,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cards-item">
+                <div class="cards-item" id="ad">
                     <div class="card">
                         <div class="card-image">
                             <img src="assets/image/android-developers.png" class="img-card">
