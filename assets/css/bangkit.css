@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cards_item {
+        width: 50%;
+    }
+
+    .logo-hero {
+        width: 20px;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        flex: display;
+        flex-direction: column;
+    }
+
+    .content-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+@media all and (min-width: 800px) {
+    .content-logo {
+        order: 2;
+    }
+
+    .content-description {
+        order: 1;
+    }
+
+    .cards-item {
+        width: 33.3333%;
+    }
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Hero */
+
+.hero {
+    background: url('../image/bg.png');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-brand {
+    width: 20px;
+}
+
+/* Nav Header*/
+nav {
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .brand {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+header .brand-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+header .brand h1 {
+    font-size: 18px;
+}
+
+nav {
+    position: sticky;
+}
+
+header nav a {
+    padding: 0.5em;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    border-bottom: 3px solid #111d5e;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+.logo-hero {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.content-hero {
+    max-width: 1440px;
+    height: 400px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+}
+
+.content-description p {
+    text-align: center;
+    line-height: 20px;
+    margin: 0 20px 0 20px;
+}
+
+.content-description a {
+    display: inline-block;
+    color: #fff;
+    background-color: #111d5e;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.content-description a:hover {
+    background-color: rgb(0, 42, 121);
+    padding-bottom: 11px;
+}
+
+/* About  */
+
+.about {
+    max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 500px;
+    background-color: #111d5e;
+}
+
+.about h1 {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    border-bottom: 3px solid #c70039;
+}
+
+.about p{
+    color: #fff;
+}
+
+
+.about .content-about {
+    width: 60%;
+}
+
+.logo-companies {
+    display: flex;
+    margin-top: 30px;
+}
+
+.logo-comp{
+    padding-left:20px;
+}
+.img-comp {
+    width: 100%;
+    height: auto;
+}
+
+/* Learning Path */
+
+.learning-path {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.learning-path h1{
+    text-align:center;
+    width: 200px;
+    border-bottom: 3px solid #c70039;
+}
+
+.content-path {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+cards-item {
+    display: flex;
+    padding: 1rem;
+}
+
+.card:hover{
+    padding-top: 10px;
+    margin: 0px;
+    box-shadow: 5px 10px 20px rgba(255, 2, 2, 0.692) inset;
+}
+
+.card {
+    background-color: rgb(119, 119, 119);
+    border-radius: 10px;
+    box-shadow: 20px 50px 50px -18px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px;
+}
+
+.img-card {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    background: #fff;
+}
+
+.card-content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #c70039 70%, #640318 100%);
+}
+
+.card-title {
+    color: #ffffff;
+    font-weight: 1200;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.card-description{
+    color:#fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+/* beenefits */
+
+.benefit {
+    height: 100%;
+    max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.benefit h1{
+    text-align: center;
+    width: 120px;
+    border-bottom: 3px solid #c70039;
+}
+
+.benefit li{
+    margin-bottom: 15px;
+}
+
+.benefit .register{
+    background-color: #c70039;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.benefit .register:hover{
+    background-color:#111d5e;
+}
+
+/* Footer */
+
+.footer-box{
+    display: flex;
+    max-width: auto;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c70039;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.178) inset;
+}
+
+.footer-title h2{
+    color: #fff;
+}
+
+.footer-menu{
+    padding-bottom: 10px;
+}
+.footer-menu a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-menu a:hover{
+    color:#111d5e;
+    text-decoration: none;
+    border-right: 1px solid #ffffff;
+    border-bottom: 2px solid #111d5e;
+}
